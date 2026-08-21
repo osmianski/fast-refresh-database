@@ -15,11 +15,11 @@
     ],
     "require": {
         "php": "^8.1",
-        "symfony/process": "^6.0 || ^7.0 || ^8.0"
+        "symfony/finder": "^6.0 || ^7.0 || ^8.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.13",
-        "orchestra/testbench": "^9.0"
+        "orchestra/testbench": "^9.0 || ^10.0 || ^11.0"
     },
     "conflict": {
         "plannr/laravel-fast-refresh-database": "*"
@@ -28,6 +28,18 @@
     "autoload": {
         "psr-4": {
             "Osmianski\\FastRefreshDatabase\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Osmianski\\FastRefreshDatabase\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Osmianski\\FastRefreshDatabase\\FastRefreshDatabaseServiceProvider"
+            ]
         }
     },
     "scripts": {
