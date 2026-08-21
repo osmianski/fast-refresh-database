@@ -1,6 +1,6 @@
 <?php
 
-namespace Plannr\Laravel\FastRefreshDatabase\Traits;
+namespace Osmianski\FastRefreshDatabase;
 
 use SplFileInfo;
 use Illuminate\Support\Str;
@@ -10,7 +10,6 @@ use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\RefreshDatabaseState;
-use Plannr\Laravel\FastRefreshDatabase\Data\FastRefreshDatabaseState;
 
 trait FastRefreshDatabase
 {

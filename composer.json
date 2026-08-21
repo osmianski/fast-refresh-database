@@ -1,12 +1,16 @@
 {
-    "name": "plannr/laravel-fast-refresh-database",
-    "description": "Refresh your database faster than you've ever seen before 🚀",
+    "name": "osmianski/fast-refresh-database",
+    "description": "Skip migrating the test database when nothing about it has changed 🚀",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
             "name": "Sam Carré",
             "email": "29132017+Sammyjo20@users.noreply.github.com"
+        },
+        {
+            "name": "Vlad Osmianski",
+            "email": "vlaosm@gmail.com"
         }
     ],
     "require": {
@@ -17,10 +21,13 @@
         "friendsofphp/php-cs-fixer": "^3.13",
         "orchestra/testbench": "^9.0"
     },
+    "conflict": {
+        "plannr/laravel-fast-refresh-database": "*"
+    },
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Plannr\\Laravel\\FastRefreshDatabase\\": "src/"
+            "Osmianski\\FastRefreshDatabase\\": "src/"
         }
     },
     "scripts": {
